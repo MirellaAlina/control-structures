@@ -10,6 +10,7 @@ public class Main {
         System.out.println("Programa que determina si una persona puede votar");
 
         int age;
+        String result;
 
         Scanner keyboard = new Scanner(System.in);
 
@@ -17,9 +18,11 @@ public class Main {
         age = keyboard.nextInt();
 
         if (age >= 16) {
-            System.out.print("Puede votar");
+             result = "Puede votar";
         } else {
-            System.out.println("No puede votar");
+            result = "no puede votar";
         }
+
+        System.out.println("La persona " + result);
     }
 }
